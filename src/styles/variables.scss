@@ -1,11 +1,11 @@
-$main-font: Rubik,
+$font: Montserrat,
 sans-serif;
-$light-grey: #f4f4f4;
-$medium-grey: #7a8d9c;
-$grey: #242935;
+$heading-font: "Source Serif Pro";
+$darkblue: #1c242f;
+$orange: #ff4338;
+$lightgrey: #eaeaea;
 $white: #ffffff;
-$green: #29C13E;
-$green-gradient: linear-gradient(45deg, rgba(#29C13E, 1) 0%, rgba(#1fa130, 1) 100%);
+
 
 @mixin reset-list {
     margin: 0;
@@ -61,22 +61,4 @@ $green-gradient: linear-gradient(45deg, rgba(#29C13E, 1) 0%, rgba(#1fa130, 1) 10
     &[type=number] {
         -moz-appearance: textfield;
     }
-}
-
-@mixin box-shadow {
-    -webkit-box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
-    -moz-box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
-    box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
-}
-
-@mixin box-shadow-grey {
-    -webkit-box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
-    -moz-box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
-    box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
-}
-
-@mixin neumorph ($distance, $color) {
-    // background-color: $color;
-    // background: $color;
-    // box-shadow: $distance $distance 50px $color, -$distance -$distance 50px $color !important;
 }

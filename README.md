@@ -2,7 +2,7 @@
 A lightweight SPA for building the future of finance on Mars.
 
 ## Demo
-You Can Explore This App With A Demo Account [here](https://tandem-scheduler.vercel.app/auth/signin?test=true).
+You can explore a deployed version of this app [here](https://billie-mission-2121.vercel.app/).
 
 ## Installation
 ```

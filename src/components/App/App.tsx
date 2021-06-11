@@ -1,8 +1,12 @@
-import styles from './app.module.scss';
+
+// Styles, Fonts
+import "../../styles/global.scss";
+import "typeface-source-serif-pro";
+import "typeface-montserrat";
 
 function App() {
   return (
-    <div className={styles.app}>
+    <div className="App">
 
     </div>
   );

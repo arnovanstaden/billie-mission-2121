@@ -10,9 +10,9 @@ body {
 }
 
 body {
-    font-family: $main-font;
-    color: $grey;
-    background: $light-grey;
+    font-family: $font;
+    color: $white;
+    background: $darkblue;
 }
 
 a {
@@ -29,22 +29,17 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $light-grey;
+    background: $darkblue;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $green;
+    background: $orange;
     border-radius: 0.25rem;
     transition: 0.3s ease-in-out;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: $grey;
-}
-
-// Loader
-.loader {
-    background-color: rgba($color: $grey, $alpha: 0.75) !important;
+    background: $white;
 }
