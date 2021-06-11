@@ -1,0 +1,82 @@
+$main-font: Rubik,
+sans-serif;
+$light-grey: #f4f4f4;
+$medium-grey: #7a8d9c;
+$grey: #242935;
+$white: #ffffff;
+$green: #29C13E;
+$green-gradient: linear-gradient(45deg, rgba(#29C13E, 1) 0%, rgba(#1fa130, 1) 100%);
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin reset-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: $main-font;
+
+    :focus {
+        outline: none;
+    }
+
+    :active {
+        outline: none;
+    }
+}
+
+@mixin reset-input {
+    font-family: $main-font;
+    border: none;
+    outline: none;
+    resize: none;
+
+    // Remove Autofill Colours
+    &:-webkit-autofill {
+
+        &,
+        &:hover,
+        &:focus {
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    :active {
+        outline: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
+    -moz-box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
+    box-shadow: 3px 3px 25px -15px rgba($green, 0.3);
+}
+
+@mixin box-shadow-grey {
+    -webkit-box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
+    -moz-box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
+    box-shadow: 3px 3px 30px -10px rgba($grey, 0.3);
+}
+
+@mixin neumorph ($distance, $color) {
+    // background-color: $color;
+    // background: $color;
+    // box-shadow: $distance $distance 50px $color, -$distance -$distance 50px $color !important;
+}

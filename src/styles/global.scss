@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $main-font;
+    color: $grey;
+    background: $light-grey;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $light-grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $green;
+    border-radius: 0.25rem;
+    transition: 0.3s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $grey;
+}
+
+// Loader
+.loader {
+    background-color: rgba($color: $grey, $alpha: 0.75) !important;
+}
