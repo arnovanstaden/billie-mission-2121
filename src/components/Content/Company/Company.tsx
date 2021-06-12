@@ -1,6 +1,10 @@
-import { ICompany, TView } from "../../../types/types";
+import { useContext } from "react"
+import { ICompany, TView } from "../../../@types/types";
 import ClassNames from "classnames";
-import { formatNumber } from "../../../utils/utils"
+import { formatNumber } from "../../../utils/utils";
+
+// Context
+import { ModalContext } from "../../../context/ModalContext"
 
 // Components
 import Currency from "../../UI/Library/Currency/Currency"
@@ -14,13 +18,18 @@ interface IProps {
 }
 
 const Company = ({ company, view }: IProps) => {
+
+    // Context
+    const { openModal } = useContext(ModalContext)
+
+    // Styles
     const companyStyles = ClassNames(
         styles.company,
         view === "Grid" && styles.grid
     )
 
     return (
-        <li className={companyStyles}>
+        <li className={companyStyles} onClick={() => openModal(company)}>
             <div className={styles.intro}>
                 <h4>{company.name}</h4>
                 <small>{company.date_of_first_purchase}</small>

@@ -1,0 +1,79 @@
+@import "../../../styles/variables.scss";
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($darkblue, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inner {
+        color: $darkblue;
+        border: 3px solid $orange;
+        background-color: white;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 50vw;
+        position: relative;
+        z-index: 5;
+
+        small {
+            font-weight: 600;
+            color: $orange;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        h5 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 0;
+            font-family: $heading-font;
+        }
+
+        input {
+            @include reset-input;
+            margin-top: 1rem;
+            display: block;
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid $darkblue;
+            width: 60%;
+
+            &:focus {
+                border-color: $orange;
+                font-weight: 500
+            }
+        }
+
+        button {
+            @include reset-button;
+            background-color: $orange;
+            color: $white;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin: 1rem auto 0 auto;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid $orange;
+
+            &:hover {
+                background-color: transparent;
+                color: $darkblue;
+            }
+        }
+    }
+}

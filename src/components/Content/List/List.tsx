@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TView } from "../../../types/types";
+import { TView } from "../../../@types/types";
 import ClassNames from "classnames";
 
 // Context
