@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.list {
+    @include reset-list;
+    margin: 2rem 0;
+    display: grid;
+    gap: 1rem;
+
+    &.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,65 @@
+@import "../../../styles/variables.scss";
+
+.company {
+    background-color: rgba($white, 0.9);
+    color: $darkblue;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.2s ease-in-out;
+
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid $darkblue;
+        padding-bottom: 0.25rem;
+        transition: inherit;
+
+        h4 {
+            font-size: 1.35rem;
+            margin: 0;
+            font-weight: 600;
+            font-family: $heading-font;
+            transition: inherit;
+        }
+
+        small {
+            font-weight: 400;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+
+        p {
+            margin: 0;
+            font-weight: 500;
+            font-size: 0.95rem;
+
+            span {
+                color: $orange;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &.grid {
+        .content {
+            grid-template-columns: 1fr;
+            gap: 0.25rem;
+        }
+    }
+
+    &:hover {
+        border-color: $orange;
+
+        .intro {
+            border-color: $orange;
+        }
+    }
+
+}
