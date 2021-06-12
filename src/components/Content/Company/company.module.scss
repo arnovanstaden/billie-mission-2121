@@ -70,4 +70,14 @@
         }
     }
 
+    @media screen and (max-width:768px) {
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                margin: 0.25rem;
+            }
+        }
+    }
 }
