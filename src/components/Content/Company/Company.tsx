@@ -1,6 +1,9 @@
 import { ICompany, TView } from "../../../types/types";
 import ClassNames from "classnames";
 
+// Components
+import Currency from "../../UI/Library/Currency/Currency"
+
 // Styles
 import styles from "./company.module.scss";
 
@@ -24,12 +27,12 @@ const Company = ({ company, view }: IProps) => {
             <div className={styles.content}>
                 <div className={styles.item}>
                     <span>Budget:</span>
-                    <i data-tip="Mars Coin" className="icon-mars_coin"></i>
+                    <Currency />
                     <p>{company.budget}</p>
                 </div>
                 <div className={styles.item}>
                     <span>Budget Spent:</span>
-                    <i data-tip="Mars Coin" className="icon-mars_coin"></i>
+                    <Currency />
                     <p>{company.budget_spent}</p>
                 </div>
             </div>
