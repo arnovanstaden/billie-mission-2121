@@ -6,13 +6,12 @@ import Dashboard from "../Content/Dashboard/Dashboard";
 import { DataProvider } from "../../context/DataContext"
 import { ModalProvider } from "../../context/ModalContext"
 
-
 // Styles, Fonts, Icons
 import "../../styles/global.scss";
 import "typeface-source-serif-pro";
 import "typeface-montserrat";
 import "../../assets/icons/style.css"
-import "toasted-notes/src/styles.css";
+import 'toasted-notes/src/styles.css';
 
 function App() {
   return (

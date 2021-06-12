@@ -2,7 +2,6 @@ import { ICompany } from "../../../@types/types";
 import { useContext, useRef } from "react";
 import toaster from "toasted-notes";
 
-
 // Context
 import { ModalContext } from "../../../context/ModalContext";
 import { DataContext } from "../../../context/DataContext";
