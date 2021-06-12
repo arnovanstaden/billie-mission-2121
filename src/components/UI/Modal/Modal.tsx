@@ -37,9 +37,10 @@ const Modal = ({ company }: { company: ICompany }) => {
             <div className={styles.inner}>
                 <small>Adjust Budget</small>
                 <h5>{company.name}</h5>
-                <label hidden htmlFor="adjust-budget">Adjust Budget</label>
-                <input min={0} ref={budgetRef} type="number" name="adjust-budget" defaultValue={company.budget} />
+                <label aria-labelledby="adjust-budget" htmlFor="adjust-budget">Enter New Budget:</label>
+                <input min={0} ref={budgetRef} type="number" name="adjust-budget" id="adjust-budget" defaultValue={company.budget} />
                 <button onClick={handleSubmit}>Save Budget</button>
+                <p onClick={closeModal}>Close</p>
             </div>
         </div>
     )

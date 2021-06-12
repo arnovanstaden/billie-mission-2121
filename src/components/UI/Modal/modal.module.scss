@@ -45,14 +45,20 @@
             font-family: $heading-font;
         }
 
+        label {
+            margin: 1rem 0 0.55rem 0;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: $orange
+        }
+
         input {
             @include reset-input;
-            margin-top: 1rem;
             display: block;
             padding: 0.75rem 0.5rem;
             text-align: center;
             border: 1px solid $darkblue;
-            width: 60%;
+            min-width: 60%;
             font-weight: 500;
 
             &:focus {
@@ -73,6 +79,17 @@
             &:hover {
                 background-color: transparent;
                 color: $darkblue;
+            }
+        }
+
+        p {
+            margin: 0.5rem 0 0 0;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
