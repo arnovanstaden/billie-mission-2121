@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?tn27xq');
-  src:  url('fonts/icomoon.eot?tn27xq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?tn27xq') format('truetype'),
-    url('fonts/icomoon.woff?tn27xq') format('woff'),
-    url('fonts/icomoon.svg?tn27xq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?b5e6g6');
+  src:  url('fonts/icomoon.eot?b5e6g6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b5e6g6') format('truetype'),
+    url('fonts/icomoon.woff?b5e6g6') format('woff'),
+    url('fonts/icomoon.svg?b5e6g6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mars_coin:before {
+  content: "\e902";
+}
 .icon-grid_view:before {
   content: "\e901";
 }

@@ -22,8 +22,16 @@ const Company = ({ company, view }: IProps) => {
                 <small>{company.date_of_first_purchase}</small>
             </div>
             <div className={styles.content}>
-                <p><span>Budget:</span> {company.budget}</p>
-                <p><span>Budget Spent:</span> {company.budget_spent}</p>
+                <div className={styles.item}>
+                    <span>Budget:</span>
+                    <i data-tip="Mars Coin" className="icon-mars_coin"></i>
+                    <p>{company.budget}</p>
+                </div>
+                <div className={styles.item}>
+                    <span>Budget Spent:</span>
+                    <i data-tip="Mars Coin" className="icon-mars_coin"></i>
+                    <p>{company.budget_spent}</p>
+                </div>
             </div>
         </li>
     )
