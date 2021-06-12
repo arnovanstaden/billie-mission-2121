@@ -17,7 +17,8 @@ $white: #ffffff;
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: $main-font;
+    font-family: $font;
+    transition: 0.2s ease-in-out;
 
     :focus {
         outline: none;
@@ -29,10 +30,11 @@ $white: #ffffff;
 }
 
 @mixin reset-input {
-    font-family: $main-font;
+    font-family: $font;
     border: none;
     outline: none;
     resize: none;
+    transition: 0.2s ease-in-out;
 
     // Remove Autofill Colours
     &:-webkit-autofill {

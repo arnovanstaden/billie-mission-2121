@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { TView } from "../../../types/types";
+import { TView } from "../../../@types/types";
 
 // Context
 import { DataContext } from "../../../context/DataContext";

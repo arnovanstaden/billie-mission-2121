@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect, useContext } from "react";
-import { ICompany } from "../types/types";
+import { createContext, useState } from "react";
+import { ICompany } from "../@types/types";
 
 // Data
 import data from "../assets/data.json"
