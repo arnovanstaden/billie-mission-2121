@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from "react";
+import { createContext, useState } from "react";
 import { ICompany } from "../@types/types";
 
 // Components
@@ -13,6 +13,7 @@ interface IContext {
 export const ModalContext = createContext({} as IContext);
 
 export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
+
 
     // State
     const [company, setCompany] = useState<ICompany | null>(null);

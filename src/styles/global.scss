@@ -46,3 +46,26 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: $white;
 }
+
+// Toaster
+.Toaster__alert {
+    background-color: $orange !important;
+    border-radius: 0 !important;
+
+    .Toaster__alert_text {
+        color: $white !important;
+        font-family: $font !important;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .Toaster__alert_close {
+        opacity: 0.75;
+
+        span {
+            color: $white !important;
+            font-weight: 500;
+        }
+    }
+}
