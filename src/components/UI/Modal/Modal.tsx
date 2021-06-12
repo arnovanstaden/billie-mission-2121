@@ -19,15 +19,15 @@ const Modal = ({ company }: { company: ICompany }) => {
     // Handlers
     const handleSubmit = () => {
         const budget = parseFloat(budgetRef.current.value);
-        console.log(budget)
 
         // Test Budget
         if (budget < company.budget_spent) {
+
             return toaster.notify("New budget cannot be less than the budget spent.")
         }
 
         updateBudget(budget, company);
-        toaster.notify("Budget Updates Successfully!");
+        toaster.notify("Budget Updated Successfully!");
         return closeModal()
     }
 
