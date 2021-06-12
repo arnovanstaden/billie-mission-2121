@@ -4,7 +4,7 @@
     @include reset-list;
     margin: 2rem 0;
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 
     &.grid {
         grid-template-columns: repeat(3, 1fr);

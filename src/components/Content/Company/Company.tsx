@@ -1,5 +1,6 @@
 import { ICompany, TView } from "../../../types/types";
 import ClassNames from "classnames";
+import { formatNumber } from "../../../utils/utils"
 
 // Components
 import Currency from "../../UI/Library/Currency/Currency"
@@ -28,12 +29,17 @@ const Company = ({ company, view }: IProps) => {
                 <div className={styles.item}>
                     <span>Budget:</span>
                     <Currency />
-                    <p>{company.budget}</p>
+                    <p>{formatNumber(company.budget)}</p>
                 </div>
                 <div className={styles.item}>
-                    <span>Budget Spent:</span>
+                    <span>Spent:</span>
                     <Currency />
-                    <p>{company.budget_spent}</p>
+                    <p>{formatNumber(company.budget_spent)}</p>
+                </div>
+                <div className={styles.item}>
+                    <span>Available:</span>
+                    <Currency />
+                    <p>{formatNumber(company.budget - company.budget_spent)}</p>
                 </div>
             </div>
         </li>
