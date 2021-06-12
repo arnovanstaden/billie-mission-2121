@@ -6,10 +6,14 @@ import styles from "./header.module.scss"
 
 const header = () => {
     return (
-        <div className={styles.header}>
-            <h1>Billie</h1>
-            <h2>Mission 2121</h2>
-        </div>
+        <header className={styles.header}>
+            <Container>
+                <div className={styles.inner}>
+                    <h1>Billie</h1>
+                    <h2>Mission 2121</h2>
+                </div>
+            </Container>
+        </header>
     )
 }
 

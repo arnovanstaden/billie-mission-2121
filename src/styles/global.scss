@@ -13,6 +13,9 @@ body {
     font-family: $font;
     color: $white;
     background: $darkblue;
+    background-image: url("../assets/images/background.svg");
+    // background-position: center center;
+    // background-size: cover;
 }
 
 a {
