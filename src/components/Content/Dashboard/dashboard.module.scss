@@ -43,4 +43,21 @@
             }
         }
     }
+
+    .list {
+        @include reset-list;
+        margin: 2rem 0;
+        display: grid;
+        gap: 1.5rem;
+
+        &.grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width:991px) {
+            &.grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
 }

@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
 import { TView } from "../../../@types/types";
+import ClassNames from "classnames";
 
 // Context
 import { DataContext } from "../../../context/DataContext";
 
 // Components
 import Container from "../../UI/Library/Container/Container";
-import List from "../List/List";
+import Company from "../../Content/Company/Company";
 
 // Styles
 import styles from "./dashboard.module.scss"
@@ -19,6 +20,12 @@ const Dashboard = () => {
 
     // State
     const [view, setView] = useState<TView>("Row");
+
+    // Styles
+    const listStyles = ClassNames(
+        styles.list,
+        view === "Grid" && styles.grid
+    )
 
     return (
         <main className={styles.dashboard}>
@@ -39,7 +46,11 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <List view={view} />
+                <ul className={listStyles}>
+                    {companies.map(company => (
+                        <Company company={company} view={view} key={company.id} />
+                    ))}
+                </ul>
             </Container>
         </main>
     )
